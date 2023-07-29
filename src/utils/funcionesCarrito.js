@@ -24,7 +24,10 @@ export function addProductoUtils(setCarrito, setAlerta, incrementarProducto, car
     const producto_existente_id = carrito.findIndex(producto_existente => producto_existente.cproCodigoint === producto.cproCodigoint);
     if (producto_existente_id !== -1) {
         //Si existe, se incrementa la cantidad
-        incrementarProducto(producto);
+        const producto_existente = carrito.findIndex(e => e.cproCodigoint === producto.cproCodigoint);
+        nuevo_carrito[producto_existente].cantidad++;
+        setCarrito(nuevo_carrito);
+        console.log("incrementar producto")
     } else {
         //Si no existe, se agrega al carrito (también se le agrega la propiedad cantidad)
         producto.cantidad = 1;
