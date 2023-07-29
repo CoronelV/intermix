@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Cabecera(props) {
     return (
         <header>
-            <nav class="fixed w-screen bg-slate-800 text-white px-8 py-4 max-md:px-2 ">
+            <nav class="fixed w-screen bg-slate-800 text-white px-20 py-4  max-md:px-2 ">
                 <div class="container mx-auto flex items-center justify-between ">
                     {/* Enlaces  */}
                     <div class="space-x-4">
@@ -23,7 +23,7 @@ function Cabecera(props) {
                     </div>
 
                     {/* Carrito  */}
-                    <div class="relative">
+                    <div class="relative ">
                         <Link to="/carrito">
                             <span class="bg-red-600 text-white absolute mt-4  left-6 w-5 h-5 text-center rounded-full text-sm">
                                 {
@@ -39,7 +39,7 @@ function Cabecera(props) {
                     </div>
                 </div>
             </nav>
-        </header>
+        </header >
     )
 }
 
