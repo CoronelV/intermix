@@ -4,8 +4,8 @@ function Carrito(props) {
 
 
     return (
-        <div>
-            <h1 class="py-8 text-center text-4xl font-black text-gray-900" >Tu lista de productos</h1>
+        <div >
+            <h1 class=" py-8 pt-24 text-center text-4xl font-black text-gray-900" >Tu lista de productos</h1>
             <div class="h-screen bg-gray-100 pt-5">
                 <div class="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0">
                     <div class="rounded-lg md:w-2/3">

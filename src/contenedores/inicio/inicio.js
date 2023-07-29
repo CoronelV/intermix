@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Producto from '../../componentes/tarjetaProducto/tarjetaProducto';
 
 
@@ -80,16 +80,37 @@ function Index(props) {
     })
 
 
+    //Lógica para el filtrado de productos
+    useEffect(() => {
+        if (props.busqueda) {
+            let ruta = props.busqueda.split('/');
+            if (ruta[2]) {
+                setCategoriaSeleccionada(ruta[0].trimEnd().trimStart());
+                setsubCategoriaSeleccionada(ruta[1].trimEnd().trimStart());
+                setsubsubCategoriaSeleccionada(ruta[2].trimEnd().trimStart());
+            } else {
+                setCategoriaSeleccionada(ruta[0].trimEnd().trimStart());
+                setsubCategoriaSeleccionada(ruta[1].trimEnd().trimStart());
+            }
+
+        } else {
+            setCategoriaSeleccionada('');
+            setsubCategoriaSeleccionada('');
+            setsubsubCategoriaSeleccionada('');
+        }
+    }, [props.busqueda])
+
+
     return (
         <div>
-            <h1 class="py-8 text-center text-4xl font-black text-gray-900" >Explora los productos</h1>
+            <h1 class="py-8 pt-24 text-center text-4xl font-black text-gray-900" >Explora los productos</h1>
 
 
-            <ul class="cursor-pointer text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg shadow sm:flex">
+            <ul class="cursor-pointer text-sm font-medium text-center text-gray-700 divide-x divide-gray-200 rounded-lg shadow sm:flex">
                 {categorias.map((categoria) => {
                     return (
                         <li
-                            class={categoriaSeleccionada === categoria.nombre ? ' w-full bg-cyan-900 text-gray-100' : ' w-full bg-gray-300 text-gray-900'}
+                            class={categoriaSeleccionada === categoria.nombre ? ' w-full bg-cyan-900 text-gray-100' : ' w-full bg-gray-400 text-gray-900'}
 
                             onClick={() => [setCategoriaSeleccionada(categoria.nombre), setsubCategoriaSeleccionada('')]}>
                             <p class="inline-block w-full p-4  ">{categoria.nombre}</p>

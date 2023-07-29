@@ -2,11 +2,11 @@ function Producto(props) {
 
     return (
         <div class="w-80 p-6 bg-slate-700 border border-gray-200 rounded-lg shadow">
-            <img class="rounded-t-lg" src={"../../img/" + props.img} alt="" />
+            <img class="rounded-t-lg h-48" src={"../../img/" + props.img} alt="" />
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100">
                 {props.nombre}
             </h5>
-            <p class="mb-3 font-normal text-gray-300 ">
+            <p class="mb-3 font-normal text-gray-300 h-12">
                 {props.descripcion}</p>
             <p class='mb-3 text-gray-100'>$ {props.precio.toFixed(2)}</p>
             <div class="flex gap-x-4">

@@ -67,7 +67,7 @@ class Checkout extends React.Component {
     render() {
         return (
             <div>
-                <h1 class="py-8 text-center text-4xl font-black text-gray-900" >Finalizar Compra</h1>
+                <h1 class="py-8 pt-24 text-center text-4xl font-black text-gray-900" >Finalizar Compra</h1>
                 <div class=" bg-gray-100 pt-5">
                     <div class="mx-auto max-w-5xl flex justify-center px-6 md:flex md:space-x-6 xl:px-0 max-md:flex-col-reverse max-md:gap-y-6">
                         <div class="">
