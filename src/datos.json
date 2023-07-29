@@ -44,7 +44,9 @@
                 "cproNombre": "BIOCOMPOST X 23 KG",
                 "cproDescripcion": "BIOCOMPOST X 23 KG",
                 "cproMarca": "0",
-                "cproUbicacion": "0"
+                "cproUbicacion": "0",
+                "cproPrecio": 21.40,
+                "cproImg": "agricolas/1.jpg"
             },
             {
                 "cproId": 2,
@@ -56,7 +58,9 @@
                 "cproNombre": "BIOWAY SACO X 23 KG",
                 "cproDescripcion": "BIOWAY SACO X 23 KG",
                 "cproMarca": "0",
-                "cproUbicacion": "0"
+                "cproUbicacion": "0",
+                "cproPrecio": 11.30,
+                "cproImg": "agricolas/2.jpg"
             },
             {
                 "cproId": 3,
@@ -69,7 +73,9 @@
                 "cproDescripcion": "ECOABONAZA_SACO X 23 KG",
                 "cproMarca": "0",
                 "cproUbicacion": "0",
-                "cproTipoPrecio": 2
+                "cproTipoPrecio": 2,
+                "cproPrecio": 9.40,
+                "cproImg": "agricolas/3.jpg"
             }
         ]
     },
@@ -100,7 +106,9 @@
                 "cproNombre": "TRAMADOL AMPOLLAS 100 MG",
                 "cproDescripcion": "TRAMADOL AMPOLLAS 100 MG",
                 "cproMarca": "0",
-                "cproUbicacion": "0"
+                "cproUbicacion": "0",
+                "cproPrecio": 61.55,
+                "cproImg": "salud_animal/1.jpg"
             },
             {
                 "cproId": 861,
@@ -112,7 +120,9 @@
                 "cproNombre": "DIAZEPAM AMPOLLAS X 2 ML",
                 "cproDescripcion": "DIAZEPAM AMPOLLAS X 2 ML",
                 "cproMarca": "0",
-                "cproUbicacion": "0"
+                "cproUbicacion": "0",
+                "cproPrecio": 15.21,
+                "cproImg": "salud_animal/2.jpg"
             },
             {
                 "cproId": 862,
@@ -124,7 +134,9 @@
                 "cproNombre": "COLIVET X 50 ML",
                 "cproDescripcion": "COLIVET X 50 ML",
                 "cproMarca": "0",
-                "cproUbicacion": "0"
+                "cproUbicacion": "0",
+                "cproPrecio": 18.40,
+                "cproImg": "salud_animal/3.jpg"
             },
             {
                 "cproId": 863,
@@ -136,7 +148,9 @@
                 "cproNombre": "DIPIRONA 50 X 100 CC",
                 "cproDescripcion": "DIPIRONA 50 X 100 CC",
                 "cproMarca": "0",
-                "cproUbicacion": "0"
+                "cproUbicacion": "0",
+                "cproPrecio": 16.05,
+                "cproImg": "salud_animal/4.jpg"
             },
             {
                 "cproId": 864,
@@ -148,7 +162,9 @@
                 "cproNombre": "VETALGINA 100 ML",
                 "cproDescripcion": "VETALGINA 100 ML",
                 "cproMarca": "0",
-                "cproUbicacion": "0"
+                "cproUbicacion": "0",
+                "cproPrecio": 11.78,
+                "cproImg": "salud_animal/5.jpg"
             },
             {
                 "cproId": 865,
@@ -160,7 +176,9 @@
                 "cproNombre": "VETALGINA 50 ML",
                 "cproDescripcion": "VETALGINA 50 ML",
                 "cproMarca": "0",
-                "cproUbicacion": "0"
+                "cproUbicacion": "0",
+                "cproPrecio": 13.26,
+                "cproImg": "salud_animal/6.jpg"
             },
             {
                 "cproId": 866,
@@ -172,7 +190,9 @@
                 "cproNombre": "CREMAGAN (ANALGESICO TOPICO) POMO 200GR",
                 "cproDescripcion": "CREMAGAN (ANALGESICO TOPICO) POMO 200GR",
                 "cproMarca": "0",
-                "cproUbicacion": "0"
+                "cproUbicacion": "0",
+                "cproPrecio": 19.99,
+                "cproImg": "salud_animal/7.jpg"
             },
             {
                 "cproId": 867,
@@ -184,7 +204,9 @@
                 "cproNombre": "DESALGINA FCO X 100ML",
                 "cproDescripcion": "DESALGINA FCO X 100ML",
                 "cproMarca": "0",
-                "cproUbicacion": "0"
+                "cproUbicacion": "0",
+                "cproPrecio": 20.25,
+                "cproImg": "salud_animal/8.jpg"
             },
             {
                 "cproId": 868,
@@ -196,7 +218,9 @@
                 "cproNombre": "TRAMADOL AMPOLLAS 2ML (50MG)",
                 "cproDescripcion": "TRAMADOL AMPOLLAS 2ML (50MG)",
                 "cproMarca": "0",
-                "cproUbicacion": "0"
+                "cproUbicacion": "0",
+                "cproPrecio": 25.00,
+                "cproImg": "salud_animal/9.jpg"
             }
         ]
     }

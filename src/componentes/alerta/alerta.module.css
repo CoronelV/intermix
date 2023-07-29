@@ -1,0 +1,38 @@
+.alerta {
+    position: fixed;
+    top: 0;
+    right: -27em;
+    width: 27em;
+    padding-right: 1em;
+    height: 40px;
+    background-color: white;
+    line-height: 40px;
+    padding-left: 1.5em;
+    margin-top: 80px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.eliminado {
+    border-left: 5px solid #a70000;
+
+}
+
+.agregado {
+    border-left: 5px solid #00a70e;
+
+}
+
+.mostrar {
+    right: 0em;
+}
+
+@media (max-width: 768px) {
+    .alerta {
+        right: -30em;
+    }
+
+    .mostrar {
+        right: calc(-2em);
+    }
+}

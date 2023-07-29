@@ -8,7 +8,7 @@ function Index(props) {
     const [subsubCategoriaSeleccionada, setsubsubCategoriaSeleccionada] = useState('');
 
     //Obtengo la información del json, en este caso sólo me quedo con las categorías base de los productos
-    const data = require('../../datos.json');
+    const data = props.datos;
     let categorias = [];
 
     //Cada categoria es un objeto que tiene un nombre y un array de subcategorias
@@ -85,7 +85,7 @@ function Index(props) {
             <h1 class="py-8 text-center text-4xl font-black text-gray-900" >Explora los productos</h1>
 
 
-            <ul class=" text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg shadow sm:flex">
+            <ul class="cursor-pointer text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg shadow sm:flex">
                 {categorias.map((categoria) => {
                     return (
                         <li
@@ -99,7 +99,7 @@ function Index(props) {
                 )}
             </ul>
 
-            <ul class=" text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg shadow sm:flex">
+            <ul class="cursor-pointer text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg shadow sm:flex">
                 {categoriaSeleccionada !== '' ?
                     categorias.find((categoria) => categoria.nombre === categoriaSeleccionada).subcategorias.map((subcategoria) => {
                         return (
@@ -114,7 +114,7 @@ function Index(props) {
 
                 }
             </ul>
-            <ul class="text-center text-gray-500 divide-x divide-gray-200 rounded-lg shadow sm:flex">
+            <ul class="cursor-pointer text-center text-gray-500 divide-x divide-gray-200 rounded-lg shadow sm:flex">
                 {subCategoriaSeleccionada !== '' ?
                     categorias.find((categoria) => categoria.nombre === categoriaSeleccionada).subcategorias.find((subcategoria) => subcategoria.subcategoria_Nombre === subCategoriaSeleccionada).subsubcategorias.map((subsubcategoria) => {
                         return (
@@ -142,7 +142,13 @@ function Index(props) {
                                 <Producto
                                     nombre={producto.cproCodigoint}
                                     descripcion={producto.cproDescripcion}
-                                    addProducto={() => props.addProducto(producto)} />)
+                                    precio={producto.cproPrecio}
+                                    img={producto.cproImg}
+
+                                    addProducto={() => props.addProducto(producto)}
+                                    showInfo={() => props.showInfo(producto, categoriaSeleccionada, subCategoriaSeleccionada, subsubCategoriaSeleccionada)}
+
+                                />)
                         })
                         : <p class='py-4 px-8 text-orange-900 text-l'>No hay productos</p>
                     :
@@ -160,7 +166,11 @@ function Index(props) {
                                     <Producto
                                         nombre={producto.cproCodigoint}
                                         descripcion={producto.cproDescripcion}
-                                        addProducto={() => props.addProducto(producto)} />)
+                                        precio={producto.cproPrecio}
+                                        img={producto.cproImg}
+                                        addProducto={() => props.addProducto(producto)}
+                                        showInfo={() => props.showInfo(producto, categoriaSeleccionada, subCategoriaSeleccionada, subsubCategoriaSeleccionada)}
+                                    />)
                             })
                         )
                     })
